@@ -1,0 +1,61 @@
+    \documentclass{article}
+    \usepackage{CJK}
+     
+    %要运行该模板，LaTex需要安装CJK库以支持汉字.
+    %字体大小为12像素，文档类型为article
+    %如果你要写论文，就用report代替article
+    %所有LaTex文档开头必须使用这句话
+    %使用支持汉字的CJK包
+     
+    %开始CJK环境,只有在这句话之后,你才能使用汉字
+    %另外,如果在Linux下,请将文件的编码格式设置成GBK
+    %否则会显示乱码
+    \begin{CJK*}{GBK}{song}
+    %这是文章的标题
+    \title{LaTex 常用模板}
+    %这是文章的作者
+    \author{Kevin}
+    %这是文章的时间
+    %如果没有这行将显示当前时间
+    %如果不想显示时间则使用 \date{}
+    \date{2008/10/12}
+    %以上部分叫做"导言区",下面才开始写正文
+    \begin{document}
+    %先插入标题
+    \maketitle     %主要的作用是用于生成标题的作用 content contain \title \author \date
+    %再插入目录
+    \tableofcontents   %主要的作用适用于生成目录的作用
+    \section{LaTex 简介}
+    LaTex是一个宏包,目的是使作者能够利用一个
+    预先定义好的专业页面设置,
+    从而得以高质量的排版和打印他们的作品.
+    %第二段使用黑体,上面的一个空行表示另起一段
+    \CJKfamily{hei}LaTex 将空格和制表符视为相同的距离.
+    多个连续的空白字符 等同为一个空白字符
+    \section{LaTex源文件}
+    %在第二段我们使用隶书
+    \CJKfamily{li}LaTex 源文件格式为普通的ASCII文件,
+    你可以使用任何文本编辑器来创建.
+    LaTex源文件不仅包括你要排版的文本, 还包括LaTex
+    所能识别的,如何排版这些文本的命令.
+    \section{结论}
+    %在结论部分我们使用仿宋体
+    \CJKfamily{fs}LaTeX, 我看行!
+    \end{CJK*}
+    \end{document}
+
+这个是超级简洁版本的
+
+    \documentclass{article}
+    \usepackage{CJK}
+     
+    \begin{CJK*}{GBK}{song}
+    \begin{document}
+     
+    \section{LaTex 简介}
+    输入想要写作的内容
+    \end{CJK*}
+    \end{document}
+————————————————
+版权声明：本文为CSDN博主「LJ_Huang」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/huang_shao1/article/details/82180825
